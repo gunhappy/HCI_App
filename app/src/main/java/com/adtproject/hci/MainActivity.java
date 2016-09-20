@@ -3,7 +3,6 @@ package com.adtproject.hci;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
-import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,21 +34,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this,codingTab.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                intent.putExtra("menu_name", "code");
                 startActivity(intent);
-//                Fragment codeFragment = new codingFragment();
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.mainlayout,codeFragment).commit();
             }
         });
 
         icon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment codeFragment = new codingFragment();
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.mainlayout,codeFragment).commit();
-                Intent intent = new Intent(MainActivity.this,codingTab.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                intent.putExtra("menu_name", "schedule");
                 startActivity(intent);
             }
         });
@@ -58,10 +53,8 @@ public class MainActivity extends AppCompatActivity {
         icon3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment codeFragment = new codingFragment();
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.mainlayout,codeFragment).commit();
-                Intent intent = new Intent(MainActivity.this,codingTab.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                intent.putExtra("menu_name", "task");
                 startActivity(intent);
             }
         });
@@ -70,10 +63,8 @@ public class MainActivity extends AppCompatActivity {
         icon4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment codeFragment = new codingFragment();
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.mainlayout,codeFragment).commit();
-                Intent intent = new Intent(MainActivity.this,codingTab.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                intent.putExtra("menu_name", "game");
                 startActivity(intent);
             }
         });
@@ -82,10 +73,8 @@ public class MainActivity extends AppCompatActivity {
         icon5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment codeFragment = new codingFragment();
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.mainlayout,codeFragment).commit();
-                Intent intent = new Intent(MainActivity.this,codingTab.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                intent.putExtra("menu_name", "food");
                 startActivity(intent);
             }
         });
@@ -94,10 +83,8 @@ public class MainActivity extends AppCompatActivity {
         icon6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment codeFragment = new codingFragment();
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.mainlayout,codeFragment).commit();
-                Intent intent = new Intent(MainActivity.this,codingTab.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                intent.putExtra("menu_name", "chat");
                 startActivity(intent);
             }
         });

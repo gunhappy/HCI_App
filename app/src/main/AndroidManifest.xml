@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".codingTab"
-            android:label="@string/title_activity_coding_tab"
+            android:name=".MenuActivity"
+            android:label="Menu"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
