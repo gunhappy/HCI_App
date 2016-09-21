@@ -1,14 +1,80 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.adtproject.hci.codingFragment"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
 
-    <!-- TODO: Update blank fragment layout -->
+            android:background="@android:color/white"
+            android:src="@drawable/list"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@android:color/white"
+            android:src="@drawable/diskette"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@android:color/white"
+            android:src="@drawable/down_arrow"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@android:color/white"
+            android:src="@drawable/comments"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@android:color/white"
+            android:src="@drawable/previous"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@android:color/white"
+            android:src="@drawable/skip"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@android:color/white"
+            android:src="@drawable/configuration"/>
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Hello.py"/>
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Code Fragment" />
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:text="print 'Hello HCI'"
+        android:gravity="top"
+        android:layout_weight="1" />
 
-</FrameLayout>
+</LinearLayout>

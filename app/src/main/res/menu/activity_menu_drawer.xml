@@ -4,27 +4,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_code"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/code"
             android:title="Coding" />
         <item
             android:id="@+id/nav_schedule"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/c2"
             android:title="Schedule" />
         <item
             android:id="@+id/nav_task"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="TaskAssignment" />
+            android:icon="@drawable/check"
+            android:title="Task Assignment" />
         <item
             android:id="@+id/nav_game"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="MiniGame" />
+            android:icon="@drawable/gc2"
+            android:title="Mini Game" />
         <item
             android:id="@+id/nav_food"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="FoodDelivery" />
+            android:icon="@drawable/burger"
+            android:title="Food Delivery" />
         <item
             android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/c3"
             android:title="Chat" />
     </group>
 
